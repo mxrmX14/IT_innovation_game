@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css'%}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Null Network</title>
 </head>
 <body>
     <h1>Welcome to Null Network</h1>
         <p>Click down below for the rules or use our online point keeper</p>
 
-    <button onclick="window.location.href='/admin';">Rules</button>
-    <button onclick="window.location.href='/admin';">Point Tracker</button>
+    <button onclick="window.location.href='/rules';">Rules</button>
+    <button onclick="window.location.href='/score';">Point Tracker</button>
         
 </body>
 </html>

@@ -1,13 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <nav><button onclick="window.location.href='/';"> <img src="{% static 'back_arrow.png'%}" width="20" height="20"></button></nav>
     <h1>Null Network Score Tracker: </h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    {% load static %}
-    <link rel="stylesheet" href="{%static 'maincss.css'%}">
+    
+    <link rel="stylesheet" href="{% static 'score_keeper.css'%}">
+    
 </head>
 <body>
     <div class="player">

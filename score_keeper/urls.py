@@ -2,5 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.score_keeper)
+    path('', views.home),
+    path('score/', views.score_keeper),
+    path('rules/', views.rules)
 ]
