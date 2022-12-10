@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def score_keeper(request):
-    return render(request, 'score.html')
+    return render(request, 'score_keeper.html')

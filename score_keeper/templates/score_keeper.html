@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Null Network Score Tracker: </h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'maincss.css'%}">
+</head>
+<body>
+    <div class="player">
+        <h2>Player 1:  <span id="player1-score">8</span></h2>
+        <button class="subtract" onclick="decrementPlayerScore('player1-score')">Subtract Point</button>
+        <button class="add" onclick="incrementPlayerScore('player1-score')">Add Point</button>
+    
+    
+        <h2>Player 2:  <span id="player2-score">8</span></h2>
+        <button class="subtract" onclick="decrementPlayerScore('player2-score')">Subtract Point</button>
+        <button class="add" onclick="incrementPlayerScore('player2-score')">Add Point</button>
+    
+        <h2>Player 3:  <span id="player3-score">8</span></h2>
+        <button class="subtract" onclick="decrementPlayerScore('player3-score')">Subtract Point</button>
+        <button class="add" onclick="incrementPlayerScore('player3-score')">Add Point</button>
+    
+        <h2>Player 4:  <span id="player4-score">8</span></h2>
+        <button class="subtract" onclick="decrementPlayerScore('player4-score')">Subtract Point</button>
+        <button class="add" onclick="incrementPlayerScore('player4-score')">Add Point</button>
+    </div>
+    
+    
+    
+</body>
+<script>
+    function incrementPlayerScore(player_id) {
+      // Get the current score from the page
+      var scoreElement = document.getElementById(player_id);
+      var score = parseInt(scoreElement.innerText);
+
+      // Decrement the score by 1
+      score += 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+    function decrementPlayerScore(player_id) {
+      // Get the current score from the page
+      var scoreElement = document.getElementById(player_id);
+      var score = parseInt(scoreElement.innerText);
+
+      // Decrement the score by 1
+      score -= 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+</script>
+</html>
