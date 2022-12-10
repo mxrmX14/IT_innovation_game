@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Score Tracker</title>
+</head>
+<body>
+  <h1>Score Tracker</h1>
+  <h2>Player 1</h2>
+  <p>Score: <span id="player1-score">5</span></p>
+  <button onclick="incrementPlayer1Score()">+</button>
+  <button onclick="decrementPlayer1Score()">-</button>
+
+  <h2>Player 2</h2>
+  <p>Score: <span id="player2-score">5</span></p>
+  <button onclick="incrementPlayer2Score()">+</button>
+  <button onclick="decrementPlayer2Score()">-</button>
+
+  <h2>Player 3</h2>
+  <p>Score: <span id="player3-score">5</span></p>
+  <button onclick="incrementPlayer3Score()">+</button>
+  <button onclick="decrementPlayer3Score()">-</button>
+
+  <h2>Player 4</h2>
+  <p>Score: <span id="player4-score">5</span></p>
+  <button onclick="incrementPlayer4Score()">+</button>
+  <button onclick="decrementPlayer4Score()">-</button>
+
+  <script>
+    function incrementPlayer1Score() {
+      // Get the current score from the page
+      var scoreElement = document.getElementById('player1-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Increment the score by 1
+      score += 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    function decrementPlayer1Score() {
+      // Get the current score from the page
+      var scoreElement = document.getElementById('player1-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Decrement the score by 1
+      score -= 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    // Similar functions for the other players
+    function incrementPlayer2Score() {
+      var scoreElement = document.getElementById('player2-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Increment the score by 1
+      score += 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    function decrementPlayer2Score() {
+      // Get the current score from the page
+      var scoreElement = document.getElementById('player2-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Decrement the score by 1
+      score -= 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    function incrementPlayer3Score() {
+     var scoreElement = document.getElementById('player3-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Increment the score by 1
+      score += 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    function decrementPlayer3Score() {
+     // Get the current score from the page
+      var scoreElement = document.getElementById('player3-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Decrement the score by 1
+      score -= 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    function incrementPlayer4Score() {
+      var scoreElement = document.getElementById('player4-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Increment the score by 1
+      score += 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+
+    function decrementPlayer4Score() {
+     // Get the current score from the page
+      var scoreElement = document.getElementById('player4-score');
+      var score = parseInt(scoreElement.innerText);
+
+      // Decrement the score by 1
+      score -= 1;
+
+      // Update the score on the page
+      scoreElement.innerText = score;
+    }
+  </script>
+</body>
+</html>
